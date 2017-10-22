@@ -18,6 +18,7 @@ export default class ChatInput extends Component {
     e.preventDefault();
     this.sendMessage();
   }
+
   handleKeyPress(e) {
     if (e.key == "Enter") {
       this.sendMessage();
@@ -28,7 +29,6 @@ export default class ChatInput extends Component {
   sendMessage(e) {
     const message = this.state.message;
     const socket = this.state.socket;
-    console.log(message)
     if (message) {
       const obj = {
         name: this.state.myName,

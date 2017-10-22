@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 export default class Messages extends Component {
@@ -9,7 +9,6 @@ export default class Messages extends Component {
   render() {
     const myName = this.props.myName;
     const oneMessage = this.props.messages.map(message => {
-      console.log(message);
       return (
         <Message
           key={message.msgId}

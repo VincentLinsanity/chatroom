@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 import ChatRoom from "./components/ChatRoom";
 import Landing from "./components/landing";
 import api from "../../api/Client";
