@@ -20,7 +20,7 @@ npm install
 ```
 npm start
 ```
- - Build to package will create `dist` directory
+ - Build to package will create `build` directory
 ```
 npm run build
 ```

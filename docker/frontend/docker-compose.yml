@@ -1,0 +1,11 @@
+version: '3'
+services:
+  chatroomclient:
+    build: .
+    image: vincent/chatroomclient:latest
+    volumes:
+      - ./log/nginx:/var/log/nginx
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "80:80"
+    restart: always
