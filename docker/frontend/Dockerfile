@@ -5,7 +5,7 @@ COPY docker/frontend/nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 
 RUN mkdir -p /usr/app/html
 
-COPY dist/static /usr/app/html
+COPY build /usr/app/html
 
 RUN apk add --no-cache dnsmasq supervisor
 RUN mkdir -p /etc/supervisor.d
