@@ -36,6 +36,11 @@ serve -s build
  
  ## Docker
 
+  - You have to modify docker/frontend nginx.vh.default.config proxy_pass to the real api location
+```
+proxy_pass         http://127.0.0.1:3000/api/;
+```
+
   - Build image
 ```
 sh docker-build-frontend.sh
