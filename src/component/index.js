@@ -1,3 +1,4 @@
+import landing from "./landing";
 import chatroom from "./chatroom";
 
-export { chatroom };
+export { landing, chatroom };
